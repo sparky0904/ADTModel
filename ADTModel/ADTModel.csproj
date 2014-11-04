@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ADTModel</RootNamespace>
     <AssemblyName>ADTModel</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NHapi.Base, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V21, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V22, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V22.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V23, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V23.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V231, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V231.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V24, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V24.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V25, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\nHapi\NHapi.Model.V25.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -73,6 +103,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\nHapi\NHapi.Base.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V21.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V22.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V23.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V231.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V24.dll" />
+    <Content Include="DLL\nHapi\NHapi.Model.V25.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
